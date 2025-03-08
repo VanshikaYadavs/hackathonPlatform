@@ -1,0 +1,217 @@
+/* About Page Container */
+
+.navbar {
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's above everything */
+    background: white; /* Dark semi-transparent background */
+    padding: 15px 20px;
+  }
+.about-page {
+    font-family: "Arial", sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+/* Hero Banner (Adjusted to Stay Below Navbar) */
+.about-hero-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 4rem;
+    margin-top: 80px; /* Pushes the hero image below the navbar */
+  }
+  
+  /* Background Image with Blur & Dark Overlay */
+  .about-hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/h2.png'); /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%) contrast(90%) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.7)); 
+    transform: scale(1.1);
+    transition: filter 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .about-hero-container:hover::before {
+    filter: blur(1px) brightness(80%);
+    transform: scale(1);
+  }
+  
+  /* Text Overlay */
+  .about-hero-overlay {
+    position: relative;
+    color: white;
+    text-align: left;
+    max-width: 55%;
+  }
+
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+  }
+  
+  /* Increased Space Between Sections */
+  .hero,
+  .brand-story,
+  .mission-vision,
+  .engagement {
+    margin-top: 60px; /* More space between sections */
+    padding: 60px 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #4a90e2, #66b2ff);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  .cta-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Brand Story Section */
+  .brand-story {
+    padding: 40px;
+  }
+  
+  .story-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision {
+    background-color: #f4f4f4;
+  }
+  
+  .mission-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mission-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+  
+  /* Engagement Section */
+  .engagement {
+    background: linear-gradient(to right, #007bff, #66b2ff);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .engagement ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .engagement li {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  /* Updated Font Sizes for Better Visibility */
+.about-hero-title {
+    font-size: 5rem; /* Increased */
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 2.2rem; /* Increased */
+    max-width: 750px; /* Slightly wider for readability */
+    font-weight: 600;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeIn 1s ease-in-out 0.3s forwards;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .about-hero-title {
+      font-size: 4rem; /* Adjusted for tablets */
+    }
+  
+    .about-hero-subtitle {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-hero-title {
+      font-size: 3.5rem; /* Adjusted for mobile */
+    }
+  
+    .about-hero-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+  

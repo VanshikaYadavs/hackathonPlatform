@@ -1,0 +1,387 @@
+/* General Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px; 
+  }
+  
+  /* Event Section */
+  .event-section {
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 60px;
+  }
+  
+  /* Featured Event */
+  .featured-event {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-items: stretch; /* Makes both sections the same height */
+    gap: 20px;
+  }
+  
+  /* Event Banner */
+  .event-banner {
+    flex: 1; /* Makes the banner take equal space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .event-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper image scaling */
+    border-radius: 12px;
+  }
+  
+  /* Event Info */
+  .event-info {
+    flex: 1; /* Ensures both sections are equal */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .event-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event-info p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Rating and Actions */
+  .event-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .event-actions span  {
+    background: #e0e0e0; /* Light gray background */
+    padding: 6px 12px; /* Add padding for a capsule shape */
+    border-radius: 20px; /* Rounded corners for capsule effect */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Darker text for contrast */
+    display: inline-block; /* Ensures proper spacing */
+}
+.event-actions button  {
+    background: #e0e0e0; /* Light gray background */
+    padding: 6px 12px; /* Add padding for a capsule shape */
+    border-radius: 20px; /* Rounded corners for capsule effect */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Darker text for contrast */
+    display: inline-block; /* Ensures proper spacing */
+}
+  
+  .rating {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9900;
+    margin-right: 10px;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  /* Event Details */
+  .event-location,
+  .event-status {
+    margin-top: 15px;
+  }
+  
+  .event-location span,
+  .event-status span {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Button Styling */
+  .projects-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .projects-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Other Events Grid */
+  .event-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Event Card */
+  .event-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+  }
+  
+  .event-card h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event-card .description {
+    font-size: 15px;
+    color: #666;
+  }
+  
+  .event-details {
+    margin-top: 15px;
+    padding: 12px;
+  }
+  
+  .event-details span {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .event-details p {
+    font-size: 14px;
+    color: #666;
+  }
+ /* General Styling */
+.event-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure equal height for children */
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Projects List */
+  .projects-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  /* Project Details */
+  .project-details {
+    flex: 1;
+  }
+  
+  .project-details h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .project-details p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Team Avatars */
+  .team-avatars {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Likes */
+  .likes {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e63946;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Quote Box */
+  .quote-box {
+    width: 30%;
+    height: 100vh;
+    background: #007bff; /* Blue Background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px; /* Added space between projects-list and quote-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  /* Ensure Projects List & Quote Box Align Properly */
+  .projects-section {
+    align-items: stretch;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  /* Quote Styling */
+  .quote-box blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .quote-box span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Post Button */
+  .post-button {
+    background: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .post-button:hover {
+    background:whitesmoke;
+    color: #333;
+  }
+  /* Section Title Styling */
+.section-title {
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Quote Box */
+  .quote-box {
+    width: 30%;
+    height: 100vh;
+    background: #007bff; /* Blue Background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px; /* Added space between projects-list and quote-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes button to the bottom */
+    align-items: center;
+  }
+  
+  /* Move Quote Text to Top */
+  .quote-box blockquote {
+    font-size: 40px; /* Increased font size */
+    font-style: italic;
+    align-self: center; /* Moves quote to the top */
+    text-align: left;
+    width: 100%;
+  }
+  
+  /* Increase Font Size of Paragraph in Quote Box */
+  .quote-box p {
+    font-size: 40px; /* Increased font size */
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  .quote-box span{
+    font-size: 35px;
+  }
+  /* Move Button to Bottom */
+  .quote-box .post-button {
+    align-self: center; /* Push button to bottom */
+  }
+  .event-status {
+    background: #e0e0e0; /* Light gray background */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    text-align: start; /* Center align text */
+    margin-top: 15px; /* Add space above */
+    padding-top: 20px;
+    padding-left: 20px;
+}
